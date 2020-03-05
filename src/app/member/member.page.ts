@@ -3,15 +3,17 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
-  selector: 'app-policy',
-  templateUrl: './policy.page.html',
-  styleUrls: ['./policy.page.scss'],
+  selector: 'app-member',
+  templateUrl: './member.page.html',
+  styleUrls: ['./member.page.scss'],
 })
-export class PolicyPage implements OnInit {
+export class MemberPage implements OnInit {
+
   users = [];
   policy;
   policyPrice;
   policyMembers;
+  policyName;
 
   constructor(private db:AngularFirestore,
     private angularFireAuth:AngularFireAuth,) { 
@@ -31,6 +33,7 @@ export class PolicyPage implements OnInit {
         if(user.uid == element.key){
           this.policy = element.data.plan;
           this.policyMembers = element.data.members;
+          this.policyName = element.data.memberName;
         }
       });
       if (this.policy == "Standard Plan") {
@@ -38,7 +41,7 @@ export class PolicyPage implements OnInit {
       }else if (this.policy == "Premium Plan") {
         this.policyPrice = 200;
       }
-      console.log(this.policy +' - '+this.policyPrice +' - '+this.policyMembers);
+      console.log(this.policy +' - '+this.policyPrice +' - '+this.policyMembers +' - '+this.policyName);
     })
   }
 
@@ -68,4 +71,4 @@ export class PolicyPage implements OnInit {
   // }
 
 }
- 
+

@@ -9,24 +9,33 @@
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-list padding>
-        <ion-card class="flex-item-1">
-            <ion-grid>
+    <!-- <ion-list padding> -->
+        <!-- <ion-card class="flex-item-1"> -->
+            <!-- <ion-grid>
                 <ion-row>
-                    <ion-col>
-                        <h3 style="margin: 0.5em;padding: 0;transform: translateX(10px);">R {{policyPrice}}</h3>
-                        <h6 style="margin: 0.5em;padding: 0;font-size: 10pt;transform: translateX(10px)">Per Month</h6>
-                    </ion-col>
-                    <ion-col style="text-align: center;">
-                        <div>
-                            <h3 style="margin: 0.5em;padding: 0;transform: translateY(10px);transform: translateX(20px);"> {{policyMembers}}</h3>
-                            <h6 style="margin: 0.5em;padding: 0;font-size: 10pt;transform: translateX(20px);">Members</h6>
-                        </div>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+                    <ion-col> -->
+                        <h3 style="margin: 0.5em;padding: 0;transform: translateX(10px);">Plan</h3>
+                        <h5 style="margin: 0.5em;padding: 0;transform: translateX(10px);">{{policy}}</h5>
 
-        </ion-card>
-        <div style="text-align: center;transform: translateY(-25px);"><b style="border: 1px solid lightgray;border-radius: 10px;padding: 0.5em;background-color: #2196F3;color: white">{{policy}}</b></div>
-    </ion-list>
+                        <h3 style="margin: 0.5em;padding: 0;transform:  translateX(10px)">Per Month</h3>
+                        <h5 style="margin: 0.5em;padding: 0;transform: translateX(10px);">R {{policyPrice}}</h5>
+
+                        <h3 style="margin: 0.5em;padding: 0;transform: translateX(10px);">Members</h3>
+                        <h5 style="margin: 0.5em;padding: 0;transform: translateY(10px);transform: translateX(20px);"> {{policyMembers}}</h5>
+
+                    <!-- </ion-col> -->
+                    <!-- <ion-col style="text-align: center;">
+                        <div>
+                       
+                        </div>
+                    </ion-col> -->
+                <!-- </ion-row>
+            </ion-grid> -->
+
+        <!-- </ion-card> -->
+        <br>
+        <br>
+        <div style="text-align: center;transform: translateY(-25px);"><b style="border: 1px solid lightgray;border-radius:
+         10px;padding: 0.5em;background-color: #2196F3;color: white" routerLink="/member">Members or beneficiaries</b></div>
+    <!-- </ion-list> -->
 </ion-content>

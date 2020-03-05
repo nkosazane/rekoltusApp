@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'popover1-help', loadChildren: './components/popover1-help/popover1-help.module#Popover1HelpPageModule' },
   { path: 'popover2-help', loadChildren: './components/popover2-help/popover2-help.module#Popover2HelpPageModule' },
   { path: 'popover3-help', loadChildren: './components/popover3-help/popover3-help.module#Popover3HelpPageModule' },
-  { path: 'popover4-help', loadChildren: './components/popover4-help/popover4-help.module#Popover4HelpPageModule' },
+  { path: 'popover4-help', loadChildren: './components/popover4-help/popover4-help.module#Popover4HelpPageModule' },  { path: 'member', loadChildren: './member/member.module#MemberPageModule' },
+
   
 
 ];
